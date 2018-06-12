@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<title>Train Unloading - Simulation</title>
+	<style type="text/css">
+	body, html, object, embed, applet { margin:0; padding:0; border:0; }
+	</style></head>
+	<body onLoad="resize();">
+	<p style="color:red; font-weight:bold;">If the applet doesn't start successfully, please run 'Train Unloading.bat' for Windows, or 'Train Unloading.sh' for Mac or Linux, which are located in the same folder.</p>
+		<script language="javascript">
+<!--
+			var winWidth;
+			var winHeight;
+			function resize()
+			{
+				winWidth = Math.min( 1002, screen.availWidth );
+				winHeight = Math.min( 658, screen.availHeight );
+				window.resizeTo( winWidth, winHeight );	
+				winWidth = 2 * winWidth - document.body.clientWidth;
+				winHeight = 2 * winHeight - document.body.clientHeight;
+				window.resizeTo( winWidth, winHeight );	
+			}
+-->
+		</script>
+		<object
+			classid="clsid:CAFEEFAC-0016-0000-0000-ABCDEFFEDCBA"
+		  	width="1002"
+		  	height="658"
+			codebase="http://java.sun.com/update/1.6.0/jinstall-6-windows-i586.cab#Version=6,0,0,0">
+			<param name="code" value="train_unloading/Simulation$Applet.class" />
+			<param name="archive" value="com.xj.anylogic.engine.jar,com.xj.anylogic.engine.nl.jar,model.jar,lib/RailLibraryOld.jar,lib/EnterpriseLibrary.jar" />
+			<comment>
+				<embed
+					code="train_unloading/Simulation$Applet.class"
+					archive="com.xj.anylogic.engine.jar,com.xj.anylogic.engine.nl.jar,model.jar,lib/RailLibraryOld.jar,lib/EnterpriseLibrary.jar"
+		  			width="1002"
+		  			height="658"
+					type="application/x-java-applet;version=1.6"
+					pluginsspage="http://java.sun.com/javase/downloads/">
+					<noembed>
+						<applet
+						 	code="train_unloading/Simulation$Applet.class"
+						 	archive="com.xj.anylogic.engine.jar,com.xj.anylogic.engine.nl.jar,model.jar,lib/RailLibraryOld.jar,lib/EnterpriseLibrary.jar"
+						  	width="1002"
+				  			height="658">
+						</applet>
+					</noembed>
+				</embed>
+			</comment>
+		</object>
+	</body>
+</html>
